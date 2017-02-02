@@ -2,7 +2,7 @@
 # requires libraries leaflet, htmlwidgets
 
 map_leaflet <- function(polygons_footprint, points_with_height, outname){
-  map = leaflet() %>% addTiles() %>%   
+  map <- leaflet() %>% addTiles() %>%   
     addPolygons(data = polygons_footprint, fill = FALSE, stroke = TRUE, color = 'red'
     ) %>%
     addMarkers(data = points_with_height,
